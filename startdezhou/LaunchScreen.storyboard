@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="launch-view-controller">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="launch-scene">
+            <objects>
+                <viewController id="launch-view-controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="launch-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="LaunchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="launch-background">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="弈筹机" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="YES" minimumScaleFactor="0.78" translatesAutoresizingMaskIntoConstraints="NO" id="launch-title">
+                                <rect key="frame" x="64" y="648" width="265" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                <color key="textColor" red="0.8840000033" green="0.9800000191" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="牌局胜率 · 行动线复盘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="YES" minimumScaleFactor="0.72" translatesAutoresizingMaskIntoConstraints="NO" id="launch-subtitle">
+                                <rect key="frame" x="55" y="704" width="283" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="regular" pointSize="17"/>
+                                <color key="textColor" red="0.5200000000" green="0.8820000291" blue="0.9409999847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.01568627451" green="0.04705882353" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="launch-background" firstAttribute="top" secondItem="launch-view" secondAttribute="top" id="bg-top"/>
+                            <constraint firstItem="launch-background" firstAttribute="leading" secondItem="launch-view" secondAttribute="leading" id="bg-leading"/>
+                            <constraint firstAttribute="trailing" secondItem="launch-background" secondAttribute="trailing" id="bg-trailing"/>
+                            <constraint firstAttribute="bottom" secondItem="launch-background" secondAttribute="bottom" id="bg-bottom"/>
+                            <constraint firstItem="launch-title" firstAttribute="centerX" secondItem="launch-view" secondAttribute="centerX" id="title-center-x"/>
+                            <constraint firstItem="launch-title" firstAttribute="width" secondItem="launch-view" secondAttribute="width" multiplier="0.68" id="title-width"/>
+                            <constraint firstItem="launch-title" firstAttribute="bottom" secondItem="launch-view" secondAttribute="bottom" constant="-156" id="title-bottom"/>
+                            <constraint firstItem="launch-subtitle" firstAttribute="top" secondItem="launch-title" secondAttribute="bottom" constant="12" id="subtitle-top"/>
+                            <constraint firstItem="launch-subtitle" firstAttribute="centerX" secondItem="launch-view" secondAttribute="centerX" id="subtitle-center-x"/>
+                            <constraint firstItem="launch-subtitle" firstAttribute="width" secondItem="launch-view" secondAttribute="width" multiplier="0.72" id="subtitle-width"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="first-responder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchBackground" width="1290" height="2796"/>
+    </resources>
+</document>
